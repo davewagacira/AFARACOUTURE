@@ -19,50 +19,75 @@ export function Header() {
         >
           <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.22),rgba(255,255,255,0.04)_45%,rgba(201,169,98,0.06))]" />
           <div className="relative flex items-center justify-between px-5 py-3 md:px-7 md:py-4">
-          {/* Logo - Left */}
-          <Link href="/" className="flex-shrink-0">
-            <h1 className="font-serif text-base md:text-lg lg:text-xl tracking-[0.22em] text-foreground whitespace-nowrap">
-              AFARA <span className="text-[0.82em] text-foreground/65">COUTURE</span>
-            </h1>
-          </Link>
+            {/* Logo - Left */}
+            <Link href="/" className="flex-shrink-0">
+              <h1 className="font-serif text-base md:text-lg lg:text-xl tracking-[0.22em] text-foreground whitespace-nowrap">
+                AFARA <span className="text-[0.82em] text-foreground/65">COUTURE</span>
+              </h1>
+            </Link>
 
-          {/* Desktop Navigation - Right */}
-          <div className="hidden md:flex items-center gap-3">
-            <div className="flex items-center gap-1 rounded-full border border-white/20 bg-[rgba(255,255,255,0.18)] px-2 py-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.28)]">
+            {/* Desktop Navigation - Right */}
+            <div className="hidden md:flex items-center gap-1">
               <Link
                 href="/collections"
-                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-white/70 hover:text-foreground transition-all duration-300"
+                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-[rgba(255,255,255,0.32)] hover:text-foreground transition-all duration-300"
               >
                 Collections
               </Link>
               <Link
                 href="/selection"
-                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-white/70 hover:text-foreground transition-all duration-300"
+                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-[rgba(255,255,255,0.32)] hover:text-foreground transition-all duration-300"
               >
                 Selection
               </Link>
               <Link
                 href="/heritage"
-                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-white/70 hover:text-foreground transition-all duration-300"
+                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-[rgba(255,255,255,0.32)] hover:text-foreground transition-all duration-300"
               >
                 Heritage
               </Link>
               <Link
                 href="/services"
-                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-white/70 hover:text-foreground transition-all duration-300"
+                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-[rgba(255,255,255,0.32)] hover:text-foreground transition-all duration-300"
               >
                 Services
               </Link>
               <Link
                 href="/boutiques"
-                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-white/70 hover:text-foreground transition-all duration-300"
+                className="rounded-full px-4 py-2 text-xs tracking-[0.28em] uppercase text-foreground/78 hover:bg-[rgba(255,255,255,0.32)] hover:text-foreground transition-all duration-300"
               >
                 Boutiques
               </Link>
+
+              {/* Icons - Desktop */}
+              <div className="ml-2 flex items-center gap-2">
+                <button
+                  type="button"
+                  className="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-white/20 bg-[rgba(255,255,255,0.18)] text-foreground/78 hover:bg-[rgba(255,255,255,0.42)] hover:text-foreground transition-all duration-300"
+                  aria-label="Search"
+                >
+                  <Search className="w-5 h-5" />
+                </button>
+                <Link
+                  href="/profile"
+                  className="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-white/20 bg-[rgba(255,255,255,0.18)] text-foreground/78 hover:bg-[rgba(255,255,255,0.42)] hover:text-foreground transition-all duration-300"
+                >
+                  <User className="w-5 h-5" />
+                </Link>
+                <Link
+                  href="/cart"
+                  className="relative flex min-h-11 min-w-11 items-center justify-center rounded-full border border-black/8 bg-[#1d1b17] text-white hover:bg-[#2b2822] transition-all duration-300"
+                >
+                  <ShoppingBag className="w-5 h-5" />
+                  <span className="absolute -right-0.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-[10px] text-accent-foreground shadow-sm">
+                    2
+                  </span>
+                </Link>
+              </div>
             </div>
 
-            {/* Icons - Desktop */}
-            <div className="flex items-center gap-2">
+            {/* Mobile Icons and Menu Button - Right */}
+            <div className="md:hidden flex items-center gap-2">
               <button
                 type="button"
                 className="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-white/20 bg-[rgba(255,255,255,0.18)] text-foreground/78 hover:bg-[rgba(255,255,255,0.42)] hover:text-foreground transition-all duration-300"
@@ -70,12 +95,6 @@ export function Header() {
               >
                 <Search className="w-5 h-5" />
               </button>
-              <Link
-                href="/profile"
-                className="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-white/20 bg-[rgba(255,255,255,0.18)] text-foreground/78 hover:bg-[rgba(255,255,255,0.42)] hover:text-foreground transition-all duration-300"
-              >
-                <User className="w-5 h-5" />
-              </Link>
               <Link
                 href="/cart"
                 className="relative flex min-h-11 min-w-11 items-center justify-center rounded-full border border-black/8 bg-[#1d1b17] text-white hover:bg-[#2b2822] transition-all duration-300"
@@ -85,37 +104,16 @@ export function Header() {
                   2
                 </span>
               </Link>
+              <button
+                type="button"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-white/20 bg-[rgba(255,255,255,0.18)] text-foreground hover:bg-[rgba(255,255,255,0.42)] transition-all duration-300"
+                aria-label="Toggle menu"
+              >
+                {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              </button>
             </div>
           </div>
-
-          {/* Mobile Icons and Menu Button - Right */}
-          <div className="md:hidden flex items-center gap-2">
-            <button
-              type="button"
-              className="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-white/20 bg-[rgba(255,255,255,0.18)] text-foreground/78 hover:bg-[rgba(255,255,255,0.42)] hover:text-foreground transition-all duration-300"
-              aria-label="Search"
-            >
-              <Search className="w-5 h-5" />
-            </button>
-            <Link
-              href="/cart"
-              className="relative flex min-h-11 min-w-11 items-center justify-center rounded-full border border-black/8 bg-[#1d1b17] text-white hover:bg-[#2b2822] transition-all duration-300"
-            >
-              <ShoppingBag className="w-5 h-5" />
-              <span className="absolute -right-0.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-[10px] text-accent-foreground shadow-sm">
-                2
-              </span>
-            </Link>
-            <button
-              type="button"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-white/20 bg-[rgba(255,255,255,0.18)] text-foreground hover:bg-[rgba(255,255,255,0.42)] transition-all duration-300"
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
-          </div>
-        </div>
         </div>
 
         {/* Mobile Menu */}
