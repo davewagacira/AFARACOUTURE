@@ -4,25 +4,11 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { useState } from "react";
 import { Trash2, Plus, Minus } from "lucide-react";
-import { productPricing } from "@/lib/product-pricing";
 
 export default function CartPage() {
-  const [items, setItems] = useState([
-    {
-      id: 1,
-      name: "Serengeti Necklace",
-      price: productPricing.serengetiNecklace,
-      quantity: 1,
-      image: "/images/jewelry.jpg",
-    },
-    {
-      id: 2,
-      name: "Nairobi Luxury Bag",
-      price: productPricing.nairobiLuxuryBag,
-      quantity: 1,
-      image: "/images/leather-bag.jpg",
-    },
-  ]);
+  const [items, setItems] = useState<
+    { id: number; name: string; price: number; quantity: number; image: string }[]
+  >([]);
 
   const updateQuantity = (id: number, newQuantity: number) => {
     if (newQuantity <= 0) {

@@ -31,15 +31,6 @@ export function Hero() {
         />
       </div>
 
-      {/* Decorative vertical lines */}
-      <div className="absolute inset-0 hidden lg:flex justify-between px-12 pointer-events-none">
-        <div className="w-px h-full bg-white/[0.06]" />
-        <div className="w-px h-full bg-white/[0.06]" />
-        <div className="w-px h-full bg-white/[0.06]" />
-        <div className="w-px h-full bg-white/[0.06]" />
-        <div className="w-px h-full bg-white/[0.06]" />
-      </div>
-
       {/* Animated accent line */}
       <div
         className="absolute left-12 top-0 w-px bg-[#c9a962]/40 hidden lg:block animate-in slide-in-from-top duration-1000"

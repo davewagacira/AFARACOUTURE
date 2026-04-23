@@ -79,9 +79,6 @@ export function Header() {
                   className="relative flex min-h-11 min-w-11 items-center justify-center rounded-full border border-black/8 bg-[#1d1b17] text-white hover:bg-[#2b2822] transition-all duration-300"
                 >
                   <ShoppingBag className="w-5 h-5" />
-                  <span className="absolute -right-0.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-[10px] text-accent-foreground shadow-sm">
-                    2
-                  </span>
                 </Link>
               </div>
             </div>
@@ -100,9 +97,6 @@ export function Header() {
                 className="relative flex min-h-11 min-w-11 items-center justify-center rounded-full border border-black/8 bg-[#1d1b17] text-white hover:bg-[#2b2822] transition-all duration-300"
               >
                 <ShoppingBag className="w-5 h-5" />
-                <span className="absolute -right-0.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-[10px] text-accent-foreground shadow-sm">
-                  2
-                </span>
               </Link>
               <button
                 type="button"
