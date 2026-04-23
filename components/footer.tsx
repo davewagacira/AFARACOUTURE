@@ -1,14 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { Code } from "lucide-react";
 
 export function Footer() {
   return (
     <footer id="contact" className="bg-primary text-primary-foreground">
       <div className="max-w-[1800px] mx-auto px-6 md:px-12">
-        {/* Main footer */}
         <div className="py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
-          {/* Brand */}
           <div className="lg:col-span-1 space-y-6">
             <Link href="/">
               <h2 className="font-serif text-2xl tracking-[0.15em]">
@@ -19,11 +18,11 @@ export function Footer() {
               </h2>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs">
-              Since 2008, we celebrate African artisanal excellence and contemporary luxury
-              with pieces that honor heritage and modern vision.
+              A curated African luxury marketplace celebrating couture,
+              craftsmanship, and elevated design through a refined modern
+              experience.
             </p>
 
-            {/* Social */}
             <div className="flex gap-4">
               <a
                 href="https://instagram.com"
@@ -61,7 +60,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Links */}
           <div className="space-y-6">
             <h3 className="text-sm tracking-[0.2em] uppercase">Collections</h3>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
@@ -156,9 +154,20 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="py-6 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/50">
-          <p>© 2026 Afara Couture. All rights reserved.</p>
+        <div className="py-6 border-t border-primary-foreground/20 flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/50">
+          <p>&copy; 2026 Afara Couture. All rights reserved.</p>
+          <div className="flex items-center gap-1 text-sm text-muted-foreground">
+            <Code className="h-4 w-4 text-red-500" />
+            <span>Developed by</span>
+            <a
+              href="https://codeverseke.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 bg-gradient-to-r from-red-600 to-blue-500 bg-clip-text font-bold text-transparent transition-opacity hover:opacity-80"
+            >
+              CodeVerse
+            </a>
+          </div>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="#" className="hover:text-primary-foreground transition-colors duration-300">
               Legal Notice
