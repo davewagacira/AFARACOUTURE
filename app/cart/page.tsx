@@ -31,9 +31,9 @@ export default function CartPage() {
     <main className="min-h-screen">
       <Header />
       
-      <section className="pt-32 pb-24 px-6 md:px-12">
+      <section className="pt-28 md:pt-32 pb-20 md:pb-24 px-6 md:px-12">
         <div className="max-w-[1800px] mx-auto">
-          <h1 className="font-serif text-5xl md:text-6xl mb-16">Shopping Cart</h1>
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl mb-12 md:mb-16">Shopping Cart</h1>
 
           {items.length === 0 ? (
             <div className="text-center py-24">
@@ -72,7 +72,7 @@ export default function CartPage() {
                           </p>
                         </div>
 
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                           {/* Quantity */}
                           <div className="flex items-center gap-2 border border-border rounded-lg">
                             <button
@@ -117,7 +117,7 @@ export default function CartPage() {
 
               {/* Order Summary */}
               <div className="lg:col-span-1">
-                <div className="border border-border rounded-lg p-8 sticky top-32">
+                <div className="border border-border rounded-lg p-6 md:p-8 lg:sticky lg:top-32">
                   <h2 className="font-serif text-2xl mb-8">Order Summary</h2>
 
                   <div className="space-y-4 mb-8 pb-8 border-b border-border">

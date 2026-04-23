@@ -11,7 +11,7 @@ export default function HeritagePage() {
     <main className="min-h-screen">
       <Header />
       
-      <section className="pt-32 pb-24 px-6 md:px-12">
+      <section className="pt-28 md:pt-32 pb-20 md:pb-24 px-6 md:px-12">
         <div className="max-w-[1800px] mx-auto">
           {/* Hero */}
           <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
@@ -19,17 +19,17 @@ export default function HeritagePage() {
               <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">
                 Our Story
               </p>
-              <h1 className="font-serif text-5xl md:text-6xl tracking-tight leading-[1.1]">
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.1]">
                 African craftsmanship
                 <span className="block italic text-accent">celebrated</span>
                 across generations
               </h1>
-              <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
+              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed max-w-lg">
                 Founded in 2022 in Nairobi, Afara Couture celebrates the artisanal excellence of East Africa.
                 Each piece is shaped through a dialogue between traditional African craft techniques
                 and contemporary luxury design, honoring heritage with a refined modern point of view.
               </p>
-              <div className="grid grid-cols-3 gap-8 py-8 border-y border-border">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 py-8 border-y border-border">
                 <div>
                   <p className="font-serif text-4xl md:text-5xl text-accent">4</p>
                   <p className="text-sm text-muted-foreground mt-1">Years of Craft</p>
@@ -55,7 +55,7 @@ export default function HeritagePage() {
 
           {/* Values Section */}
           <div className="space-y-12">
-            <h2 className="font-serif text-4xl">Our Values</h2>
+            <h2 className="font-serif text-3xl md:text-4xl">Our Values</h2>
             <div className="grid md:grid-cols-3 gap-12">
               <div className="space-y-4">
                 <div className="w-12 h-12 bg-accent text-accent-foreground flex items-center justify-center text-2xl font-serif">
@@ -91,8 +91,8 @@ export default function HeritagePage() {
           </div>
 
           {/* Heritage Quote */}
-          <div className="mt-24 border-l-4 border-accent pl-8 py-8">
-            <blockquote className="font-serif text-3xl md:text-4xl italic leading-relaxed">
+          <div className="mt-20 md:mt-24 border-l-4 border-accent pl-5 sm:pl-8 py-8">
+            <blockquote className="font-serif text-2xl sm:text-3xl md:text-4xl italic leading-relaxed">
               "African craftsmanship deserves a global stage. We are not only creating fashion;
               we are refining and preserving a living legacy."
             </blockquote>
@@ -101,7 +101,7 @@ export default function HeritagePage() {
 
           {/* Team */}
           <div className="mt-24">
-            <h2 className="font-serif text-4xl mb-12">Our Team</h2>
+            <h2 className="font-serif text-3xl md:text-4xl mb-12">Our Team</h2>
             <div className="grid md:grid-cols-3 gap-12">
               {[
                 { name: "Amara Okonkwo", role: "Founder & Creative Director", image: "/images/client-amara.jpg" },

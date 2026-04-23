@@ -59,17 +59,17 @@ export default function ServicesPage() {
     <main className="min-h-screen">
       <Header />
 
-      <section className="pt-32 pb-24 px-6 md:px-12">
+      <section className="pt-28 md:pt-32 pb-20 md:pb-24 px-6 md:px-12">
         <div className="max-w-[1800px] mx-auto">
           <div className="space-y-6 mb-24">
             <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">
               Premium Services
             </p>
-            <h1 className="font-serif text-5xl md:text-7xl tracking-tight">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl tracking-tight">
               Personalized
               <span className="italic text-accent"> Experiences</span>
             </h1>
-            <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
+            <p className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed">
               At Afara Couture, we believe luxury is personal. Our concierge
               services are designed to enhance your experience and celebrate
               your individuality.
@@ -102,8 +102,8 @@ export default function ServicesPage() {
           <div className="bg-muted/30 border border-border rounded-lg p-12 md:p-16 mb-24">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <h2 className="font-serif text-4xl">Afara Prestige Club</h2>
-                <p className="text-muted-foreground text-lg leading-relaxed">
+                <h2 className="font-serif text-3xl md:text-4xl">Afara Prestige Club</h2>
+                <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
                   Join our exclusive membership program and enjoy:
                 </p>
                 <ul className="space-y-3">
@@ -121,7 +121,7 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
-                <button className="bg-accent text-accent-foreground px-8 py-3 text-sm tracking-[0.2em] uppercase hover:opacity-90 transition-opacity duration-300">
+                <button className="w-full sm:w-auto bg-accent text-accent-foreground px-8 py-3 text-sm tracking-[0.2em] uppercase hover:opacity-90 transition-opacity duration-300">
                   Join Now
                 </button>
               </div>
@@ -136,12 +136,12 @@ export default function ServicesPage() {
           </div>
 
           <div className="text-center space-y-6">
-            <h2 className="font-serif text-4xl">Ready to Experience Luxury?</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl">Ready to Experience Luxury?</h2>
+            <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
               Contact our team to schedule a consultation or learn more about our
               services.
             </p>
-            <button className="bg-foreground text-background px-8 py-3 text-sm tracking-[0.2em] uppercase hover:opacity-90 transition-opacity duration-300">
+            <button className="w-full sm:w-auto bg-foreground text-background px-8 py-3 text-sm tracking-[0.2em] uppercase hover:opacity-90 transition-opacity duration-300">
               Contact Us
             </button>
           </div>

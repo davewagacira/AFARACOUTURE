@@ -42,25 +42,25 @@ export function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-screen flex-col justify-end pb-16 pt-28 md:pb-24 md:pt-32 lg:pb-32 lg:pt-36">
+      <div className="relative z-10 flex min-h-screen flex-col justify-end pb-12 pt-24 md:pb-24 md:pt-32 lg:pb-32 lg:pt-36">
         <div className="max-w-[1800px] mx-auto px-6 md:px-12 w-full">
           <div className="grid lg:grid-cols-12 gap-8 items-end">
             {/* Main headline area */}
-            <div className="lg:col-span-8 space-y-8">
+            <div className="lg:col-span-8 space-y-6 md:space-y-8">
               {/* Season tag */}
               <div
                 className="flex items-center gap-4 animate-in fade-in slide-in-from-left-8 duration-700"
                 style={{ animationDelay: "300ms", animationFillMode: "both" }}
               >
-                <div className="w-12 h-px bg-[#c9a962]" />
-                <p className="text-sm tracking-[0.4em] uppercase text-white/60">
+                <div className="w-8 md:w-12 h-px bg-[#c9a962]" />
+                <p className="text-[11px] sm:text-sm tracking-[0.22em] sm:tracking-[0.4em] uppercase text-white/60">
                   Spring Collection 2026 - Nairobi Heritage
                 </p>
               </div>
 
               {/* Main title */}
               <h1
-                className="font-serif text-5xl md:text-7xl lg:text-8xl xl:text-[9rem] leading-[0.88] tracking-tight text-white animate-in fade-in slide-in-from-bottom-8 duration-1000"
+                className="font-serif text-[3.2rem] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] leading-[0.92] md:leading-[0.88] tracking-tight text-white animate-in fade-in slide-in-from-bottom-8 duration-1000"
                 style={{ animationDelay: "500ms", animationFillMode: "both" }}
               >
                 African
@@ -73,7 +73,7 @@ export function Hero() {
 
               {/* Subtitle */}
               <p
-                className="text-white/50 text-lg md:text-xl max-w-xl leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700"
+                className="text-white/60 text-base sm:text-lg md:text-xl max-w-xl leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700"
                 style={{ animationDelay: "800ms", animationFillMode: "both" }}
               >
                 Exceptional pieces born from generations of African artisanal excellence.
@@ -87,14 +87,14 @@ export function Hero() {
               >
                 <Link
                   href="/collections"
-                  className="group inline-flex items-center justify-center gap-3 bg-white text-[#1a1a1a] px-10 py-5 text-sm tracking-[0.25em] uppercase min-h-12 hover:bg-[#c9a962] hover:text-[#1a1a1a] transition-all duration-500"
+                  className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-white text-[#1a1a1a] px-6 sm:px-10 py-4 sm:py-5 text-xs sm:text-sm tracking-[0.18em] sm:tracking-[0.25em] uppercase min-h-12 hover:bg-[#c9a962] hover:text-[#1a1a1a] transition-all duration-500"
                 >
                   Explore the Collection
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300" />
                 </Link>
                 <Link
                   href="/#heritage"
-                  className="inline-flex items-center justify-center gap-3 border border-white/30 text-white px-10 py-5 text-sm tracking-[0.25em] uppercase min-h-12 hover:border-white hover:bg-white/10 transition-all duration-500 backdrop-blur-sm"
+                  className="inline-flex w-full sm:w-auto items-center justify-center gap-3 border border-white/30 text-white px-6 sm:px-10 py-4 sm:py-5 text-xs sm:text-sm tracking-[0.18em] sm:tracking-[0.25em] uppercase min-h-12 hover:border-white hover:bg-white/10 transition-all duration-500 backdrop-blur-sm"
                 >
                   Our Heritage
                 </Link>

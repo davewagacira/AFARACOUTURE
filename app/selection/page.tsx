@@ -98,19 +98,19 @@ export default function SelectionPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pb-24 px-6 md:px-12">
+      <section className="pt-28 md:pt-32 pb-16 md:pb-24 px-6 md:px-12">
         <div className="max-w-[1800px] mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-end mb-16">
             <div className="space-y-4">
               <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">
                 Selection
               </p>
-              <h1 className="font-serif text-5xl md:text-6xl tracking-tight">
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl tracking-tight">
                 Featured
                 <span className="italic text-accent"> Pieces</span>
               </h1>
             </div>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-md md:text-right">
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed max-w-md md:text-right">
               Each creation is the fruit of African artisanal mastery,
               curated by our master craftspeople across Africa.
             </p>
@@ -137,7 +137,7 @@ export default function SelectionPage() {
                   )}
                   <button
                     type="button"
-                    className="absolute bottom-4 right-4 bg-white text-foreground p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-accent hover:text-accent-foreground"
+                    className="absolute bottom-4 right-4 bg-white text-foreground p-3 rounded-full opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 hover:bg-accent hover:text-accent-foreground"
                     aria-label="Add to cart"
                   >
                     <ShoppingBag className="w-5 h-5" />

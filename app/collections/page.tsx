@@ -65,17 +65,17 @@ export default function CollectionsPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pb-24 px-6 md:px-12">
+      <section className="pt-28 md:pt-32 pb-16 md:pb-24 px-6 md:px-12">
         <div className="max-w-[1800px] mx-auto">
           <div className="space-y-6 mb-16">
             <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">
               Explore
             </p>
-            <h1 className="font-serif text-5xl md:text-7xl tracking-tight">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl tracking-tight">
               Our
               <span className="italic text-accent"> Collections</span>
             </h1>
-            <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
+            <p className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed">
               Each collection represents a chapter in our story, celebrating African artisanal mastery 
               and contemporary luxury design.
             </p>
@@ -108,7 +108,7 @@ export default function CollectionsPage() {
 
           {/* All Collections */}
           <div className="space-y-8">
-            <h2 className="font-serif text-4xl">All Collections</h2>
+            <h2 className="font-serif text-3xl md:text-4xl">All Collections</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {collections.map((collection) => (
                 <Link

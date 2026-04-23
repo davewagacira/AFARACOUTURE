@@ -8,20 +8,20 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-4 left-0 right-0 z-50 px-4 md:top-6 md:px-6">
+    <header className="fixed top-3 left-0 right-0 z-50 px-3 md:top-6 md:px-6">
       <nav className="mx-auto max-w-[1480px]">
         <div
-          className="relative overflow-hidden rounded-full border border-white/25 bg-[rgba(247,245,240,0.34)] shadow-[0_18px_55px_rgba(18,18,18,0.10)] backdrop-blur-2xl"
+          className="relative overflow-hidden rounded-[1.75rem] border border-white/25 bg-[rgba(247,245,240,0.34)] shadow-[0_18px_55px_rgba(18,18,18,0.10)] backdrop-blur-2xl md:rounded-full"
           style={{
             boxShadow:
               "0 18px 55px rgba(18,18,18,0.10), inset 0 1px 0 rgba(255,255,255,0.32)",
           }}
         >
           <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.22),rgba(255,255,255,0.04)_45%,rgba(201,169,98,0.06))]" />
-          <div className="relative flex items-center justify-between px-5 py-3 md:px-7 md:py-4">
+          <div className="relative flex items-center justify-between px-4 py-3 md:px-7 md:py-4">
             {/* Logo - Left */}
             <Link href="/" className="flex-shrink-0">
-              <h1 className="font-serif text-base md:text-lg lg:text-xl tracking-[0.22em] text-foreground whitespace-nowrap">
+              <h1 className="font-serif text-[0.95rem] sm:text-base md:text-lg lg:text-xl tracking-[0.16em] md:tracking-[0.22em] text-foreground whitespace-nowrap">
                 AFARA <span className="text-[0.82em] text-foreground/65">COUTURE</span>
               </h1>
             </Link>

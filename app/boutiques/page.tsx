@@ -45,18 +45,18 @@ export default function BoutiquesPage() {
     <main className="min-h-screen">
       <Header />
       
-      <section className="pt-32 pb-24 px-6 md:px-12">
+      <section className="pt-28 md:pt-32 pb-20 md:pb-24 px-6 md:px-12">
         <div className="max-w-[1800px] mx-auto">
           {/* Hero */}
           <div className="text-center mb-24">
             <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
               Our Boutiques
             </p>
-            <h1 className="font-serif text-5xl md:text-7xl tracking-tight mb-6">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl tracking-tight mb-6">
               Experience
               <span className="italic text-accent"> Afara Couture</span>
             </h1>
-            <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+            <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
               Visit our curated boutiques across Africa to discover our collections
               and receive personalized guidance from our luxury consultants.
             </p>
@@ -116,14 +116,14 @@ export default function BoutiquesPage() {
               Afara Couture boutiques are located in the heart of Africa's premier shopping destinations. 
               Visit us to experience our collections in person and receive personalized styling advice.
             </p>
-            <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+            <div className="aspect-video bg-muted rounded-lg flex items-center justify-center text-center px-6">
               <p className="text-muted-foreground">Africa Map Coming Soon</p>
             </div>
           </div>
 
           {/* Contact Section */}
           <div className="text-center space-y-6">
-            <h2 className="font-serif text-4xl">Schedule a Visit</h2>
+            <h2 className="font-serif text-3xl md:text-4xl">Schedule a Visit</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Contact us to book a private appointment or learn about upcoming events at our boutiques.
             </p>

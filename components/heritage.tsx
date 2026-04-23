@@ -11,20 +11,20 @@ export function Heritage() {
               <p className="text-sm tracking-[0.3em] uppercase text-primary-foreground/60">
                 Our Heritage
               </p>
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.1]">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.1]">
                 African craftsmanship
                 <span className="block italic text-accent">celebrated</span>
                 across generations
               </h2>
             </div>
 
-            <p className="text-primary-foreground/70 text-lg leading-relaxed max-w-lg">
+            <p className="text-primary-foreground/70 text-base sm:text-lg leading-relaxed max-w-lg">
               Founded in 2022 in Nairobi, Afara Couture celebrates the artisanal excellence of East Africa.
               Each piece is shaped through a dialogue between traditional African craft techniques and
               contemporary luxury design, honoring heritage with a refined modern point of view.
             </p>
 
-            <div className="grid grid-cols-3 gap-8 py-8 border-y border-primary-foreground/20">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 py-8 border-y border-primary-foreground/20">
               <div>
                 <p className="font-serif text-4xl md:text-5xl text-accent">4</p>
                 <p className="text-sm text-primary-foreground/60 mt-1">
@@ -47,7 +47,7 @@ export function Heritage() {
 
             <button
               type="button"
-              className="inline-flex items-center justify-center gap-3 border border-primary-foreground text-primary-foreground px-8 py-4 text-sm tracking-[0.2em] uppercase min-h-12 hover:bg-primary-foreground hover:text-primary transition-all duration-300"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-3 border border-primary-foreground text-primary-foreground px-8 py-4 text-sm tracking-[0.2em] uppercase min-h-12 hover:bg-primary-foreground hover:text-primary transition-all duration-300"
             >
               Discover Our Story
             </button>
@@ -63,7 +63,7 @@ export function Heritage() {
                 className="w-full h-full object-cover"
               />
               {/* Decorative quote */}
-              <div className="absolute -bottom-8 -left-8 md:-bottom-12 md:-left-12 bg-accent p-6 md:p-8 max-w-[280px]">
+              <div className="absolute left-4 right-4 bottom-4 md:right-auto md:-bottom-12 md:-left-12 bg-accent p-5 md:p-8 max-w-[280px]">
                 <p className="font-serif text-accent-foreground text-lg md:text-xl italic leading-snug">
                   "African craftsmanship deserves a global stage."
                 </p>
